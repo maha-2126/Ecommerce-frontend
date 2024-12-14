@@ -1,0 +1,619 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f7fa;
+  }
+
+  /* Header.css */
+ .navbar {
+  display: flex;
+  background-color: rgb(243, 169, 180);
+  padding: 10px 20px;
+  position: sticky;
+  max-width: 84%;
+  margin-left: 80px;
+  border-radius: 30px;
+  height: 40px;
+  align-items: center;
+
+} 
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+} 
+.navbar a:hover {
+  background-color: pink;
+  border-radius: 5px;
+}
+.navbar-right {
+  margin-left: auto;
+}
+
+
+  
+  /* Title Styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Search Input */
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-left: 75px;
+  }
+  
+  /* Category Filter */
+  select {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Product List Styles */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    transition: transform 0.3s ease;
+  }
+  /* Product Image */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 30px;
+  }
+  
+  /* Product Name and Price */
+   .product-card h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  } 
+  
+  .product-card p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  /* Link Styles */
+  .product-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* No products found message */
+  p {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+  }
+  
+  /* Product Page Styles */
+.product-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.product-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+ .product-image {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  object-fit: cover;
+} 
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  width: 300px; /* Adjust based on your design needs */
+}
+
+.product-info {
+  flex: 2;
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.product-info p {
+  margin-bottom: 15px;
+}
+
+.product-info strong {
+  color: #333333;
+}
+
+button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+button:hover {
+  background-color: pink;
+
+}
+
+.quantity-selector {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Cart Page Styles */
+.cart-page {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-item .product-details {
+  flex: 1;
+}
+
+.cart-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cart-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.cart-item input {
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.cart-item button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #e60000;
+}
+
+.grand-total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grand-total button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.grand-total button:hover {
+  background-color: #0056b3;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 30px;
+}
+
+/* General Container */
+.checkout-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1.5px solid lightgrey;
+  background-color: rgb(243, 236, 225);
+  border-radius: 30px;
+  margin-top: 10px;
+}
+.checkout-container > h1 {
+  margin-right: 50px;
+}
+
+/* Checkout Form Styles */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between each input field */
+  margin-right: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-container .form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  margin-right: 60px;
+}
+
+.form-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 90px;
+}
+
+/* Buttons Styling */
+button.confirm-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button.confirm-btn:hover {
+  background-color: #218838;
+}
+
+/* Order Confirmation Styling */
+.order-confirmation {
+  text-align: center;
+}
+
+.order-confirmation h2 {
+  color: #28a745;
+}
+
+.order-confirmation p {
+  font-size: 16px;
+  color: #333;
+}
+/* Center and Decrease Width of Email Input */
+.form-group input[type="email"] {
+  width: 75%; /* Adjust the width as per your requirement */
+  margin: 0 auto; /* This will center the input box */
+  margin-right: 50px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  display: block; 
+}
+
+.profile-page {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  border: 1.5px solid lightgrey;
+  background-color: rgb(243, 236, 225);
+  border-radius: 30px;
+}
+.profile-page > h1 {
+  margin-right: 40px;
+}
+
+/* Profile Form Styles */
+.profile-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 25px; /* Space between each input field */
+  margin-right: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110%;
+  margin-right: 40px;
+}
+
+.profile-page .form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.profile-form input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.profile-details strong {
+  color: black;  /* Set the color to black or any color you prefer */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-details p {
+  color: #333; /* Change to your desired color */
+  font-family:monospace;
+}
+/* Profile Picture Styling */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+  object-fit: cover; /* Ensures the image fits within the circle */
+  margin-left: 130px;
+}
+.profile-img-container label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+/* Buttons Styling */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  gap: 20px; /* Optional: Adds consistent spacing between buttons */
+}
+
+.save-button, .cancel-button, .edit-button {
+  padding: 10px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+.edit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 180px;
+}
+
+/* .edit-button:hover {
+  background-color: #0056b3;
+} */
+
+/* Profile Details Styling */
+.profile-details {
+  text-align: left;
+  font-size: 16px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  font-weight: bold;
+}
+
+/* Profile Form Styling for Email Input */
+.profile-form .form-group input[type="email"] {
+  width: 70%; /* Adjust the width as per your requirement */
+  margin: 0 auto; /* Centers the email input */
+  margin-left: 85px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  display: block; /* Ensures the input is centered properly */
+}
+
+
+
+/* Modal Styles */
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+}
+
+.modal-dialog {
+  max-width: 400px;
+  margin: 10% auto;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: transparent;
+  margin-bottom: 25px;
+}
+.btn1:hover {
+  background-color: pink;
+}
+
+.btn-close {
+ background-color: transparent;
+ cursor:auto;
+}
+.btn-close:hover {
+  background-color: transparent;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styling for Google Login button */
+.google-login-button {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.google-login-button:hover {
+  background-color: #e66c8d;
+}
+
+/* Navbar Styling */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Flexbox for Welcome and Logout button alignment */
+.navbar-right .fw-bold {
+  color: white;
+  margin-right: 2px;
+}
+
+.navbar-right .btn1 {
+  background-color: transparent;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+
+/* Responsiveness: Ensure the modal and navbar adjust for different screen sizes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    margin-bottom: 10px;
+  }
+
+  .modal-dialog {
+    max-width: 80%;
+  }
+}
