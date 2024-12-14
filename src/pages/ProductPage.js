@@ -114,7 +114,7 @@ function ProductPage() {
           </div>
 
           {/* Add to Cart Button */}
-          <button onClick={handleAddToCart} className="btn btn-success">
+          <button onClick={handleAddToCart} className="btn1 btn-success">
             Add to Cart
           </button>
         </div>
